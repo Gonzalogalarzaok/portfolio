@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- icono de cdnjs.com combinado con  fontawesome.com -->
+    <title>Gonzalo Galarza</title>
+    <link rel="shortcut icon" href="./letra-g.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Gonzalo Galarza</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#Inicio">Inicio</a></li>
+                    <li><a href="#sobremi">Sobre Mi</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Certificaciones">Certificaciones</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCIÓN INICIO -->
+    <div class="inicio" id="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/perfil.jpg" alt="">
+            </div>
+            <h1>Gonzalo Galarza</h1>
+            <h2>Desarrollador Web</h2>
+            <div class="redes">
+                <a href="https://github.com/Gonzalogalarzaok" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/gonzalogalarza/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:galarzajota71@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="texto">
+            <h2>Soy un programador altamente motivado y hábil con una pasión por la tecnología.<br>Tengo una sólida
+                formación académica en informática y he estado trabajando en proyectos personales en mi tiempo libre
+                para desarrollar aún más mis habilidades.</h2>
+        </div>
+
+    </div>
+    <!-- SOBRE MI -->
+    <section class="sobremi" id="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p><span>Hola, soy Gonzalo Galarza </span>mi pasión por la tecnología, la programación y el diseño me
+                impulsa cada día. Como desarrollador web, me he especializado en el fascinante mundo del FrontEnd.
+                Disfruto desafiando los límites y explorando nuevas tecnologías para ofrecer soluciones creativas y
+                efectivas.</p>
+        </div>
+        <div class="abajo">
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Email</strong>
+                            galarzajota71@gmail.com
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            1125553997
+                        </li>
+                        <li>
+                            <strong>Ubicación</strong>
+                            San Miguel, Buenos Aires
+                        </li>
+                    </ul>
+                </div>
+                <button onclick="window.open('pdf/CV.pdf', '_blank');">
+                    Descargar Cv <i class="fa-solid fa-download"></i>
+                    <span class="overlay1"></span>
+                </button>
+            </div>
+            <div class="img">
+                <img src="img/gifpage.gif" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="skills">
+        <div class="contenido-skills">
+            <h2>Skills</h2>
+            <div class="subtitulos">
+                <h3>Technical Skills</h3>
+            </div>
+            <div class="lenguajes">
+                <div class="skill">
+                    <span>HTML</span>
+                    <img src="./img/html-5.png" alt="">
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <img src="./img/css-3.png" alt="">
+                </div>
+                <div class="skill">
+                    <span>Javascript</span>
+                    <img src="./img/js.png" alt="">
+                </div>
+                <div class="skill">
+                    <span>Java</span>
+                    <img src="./img/java.png" alt="">
+                </div>
+                <div class="skill">
+                    <span>Python</span>
+                    <img src="./img/py.png" alt="">
+                </div>
+                <div class="skill">
+                    <span>SQL</span>
+                    <img src="./img/sql.png" alt="">
+                </div>
+                <div class="skill">
+                    <span>Ruby</span>
+                    <img src="./img/ruby.png" alt="">
+                </div>
+                <div class="skill">
+                    <span>Git</span>
+                    <img src="./img/git.png" alt="">
+                </div>
+            </div>
+            <!-- aptitudes -->
+            <div class="subtitulos">
+                <h3>Profesional Skills</h3>
+            </div>
+            <div class="aptitudes">
+                <div class="item">
+                    <span>Comunicación</span>
+                    <i class="fa-solid fa-user-group"></i>
+                </div>
+                <div class="item">
+                    <span>Trabajo en Equipo</span>
+                    <i class="fa-solid fa-people-group"></i>
+                </div>
+                <div class="item">
+                    <span>Creatividad</span>
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <div class="item">
+                    <span>Dedicación</span>
+                    <i class="fa-solid fa-medal"></i>
+                </div>
+                <div class="item">
+                    <span>Progreso</span>
+                    <i class="fa-solid fa-bars-progress"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="portfolio" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <div class="galeria">
+                <div class="contenedor-proyecto">
+                    <div class="proyecto">
+                        <img src="img/snake.png" alt="">
+                        <div class="overlay2">
+                            <h3>Snake</h3>
+                            <p>Juego arcade "Snake" es un clásico videojuego que se originó en la década del 70.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Gonzalogalarzaok/gonzalogalarzaok.github.io-snake" target="_blank">
+                        <button>
+                            Github <i class="fa-brands fa-github"></i>
+                            <span class="overlay3"></span>
+                        </button>
+                    </a>
+                </div>
+                <div class="contenedor-proyecto">
+                    <div class="proyecto">
+                        <img src="img/calculadora.png" alt="">
+                        <div class="overlay2">
+                            <h3>Calculadora</h3>
+                            <p>Calculadora Fácil de usar para operaciones aritméticas simples</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Gonzalogalarzaok/gonzalogalarzaok.github.io-calculadora"
+                        target="_blank">
+                        <button>
+                            Github <i class="fa-brands fa-github"></i>
+                            <span class="overlay3"></span>
+                        </button>
+                    </a>
+                </div>
+                <div class="contenedor-proyecto">
+                    <div class="proyecto">
+                        <img src="img/piano.png" alt="">
+                        <div class="overlay2">
+                            <h3>Piano</h3>
+                            <p>Piano virtual que simula la experiencia de tocar un piano real en un dispositivo
+                                electrónico</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Gonzalogalarzaok/gonzalogalarzaok.github.io-piano" target="_blank">
+                        <button>
+                            Github <i class="fa-brands fa-github"></i>
+                            <span class="overlay3"></span>
+                        </button>
+                    </a>
+                </div>
+                <div class="contenedor-proyecto">
+                    <div class="proyecto">
+                        <img src="./img/paginaweb.png" alt="">
+                        <div class="overlay2">
+                            <h3>Pagina Web</h3>
+                            <p>Pagina web creada a modo de practica</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Gonzalogalarzaok/paginawebdepractica" target="_blank">
+                        <button>
+                            Github <i class="fa-brands fa-github"></i>
+                            <span class="overlay3"></span>
+                        </button>
+                    </a>
+                </div>
+                <div class="contenedor-proyecto">
+                    <div class="proyecto">
+                        <img src="./img/python.png" alt="">
+                        <div class="overlay2">
+                            <h3>Tutti Fruti</h3>
+                            <p>Juego creado en Python con el objetivo de practicar para alguna futura partida de Tutti
+                                Frutti con amigos</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Gonzalogalarzaok/tuttifruti" target="_blank">
+                        <button>
+                            Github <i class="fa-brands fa-github"></i>
+                            <span class="overlay3"></span>
+                        </button>
+                    </a>
+                </div>
+                <div class="contenedor-proyecto">
+                    <div class="proyecto">
+                        <img src="./img/javaproyect.png" alt="">
+                        <div class="overlay2">
+                            <h3>Agenda Electronica</h3>
+                            <p>Agenda Electronica con Interfaz Gráfica realizada con java</p>
+                        </div>
+                    </div>
+                    <a href="https://github.com/Gonzalogalarzaok/Agendaelectronica" target="_blank">
+                        <button>
+                            Github <i class="fa-brands fa-github"></i>
+                            <span class="overlay3"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICACIONES -->
+    <section id="Certificaciones" class="certificaciones">
+        <div class="contenido-seccion">
+            <h2>Certificaciones</h2>
+            <div class="contenedor-certificaciones">
+                <div class="certificacion">
+                    <p>Participación del curso Desarrollador Web Inicial del trayecto Programación / Testing de la
+                        Universidad Tecnológica Nacional</p>
+                    <img src="./img/certif_UTN.png" alt="">
+                    <button onclick="window.open('pdf/1.pdf', '_blank');">
+                        Ver Certificación <i class="fa-solid fa-file-pdf"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="certificacion">
+                    <p>Aprobación del curso Desarrollador Web Inicial del trayecto Programación / Testing de la
+                        Universidad Tecnológica Nacional</p>
+                    <img src="./img/certif_aprobac_UTN.png" alt="">
+                    <button onclick="window.open('pdf/2.pdf', '_blank');">
+                        Ver Certificación <i class="fa-solid fa-file-pdf"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="certificacion">
+                    <p>Aprobación primer etapa de Argentina Programa</p>
+                    <img src="./img/certif_SeProgramar.png" alt="">
+                    <button onclick="window.open('pdf/3.pdf', '_blank');">
+                        Ver Certificación <i class="fa-solid fa-file-pdf"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="certificacion">
+                    <p>Aprobación segunda etapa de Argentina Programa - IT Master</p>
+                    <img src="./img/certif_2doTramoITMaster.png ">
+                    <button onclick="window.open('pdf/4.pdf', '_blank');">
+                        Ver Certificación <i class="fa-solid fa-file-pdf"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <div class="certificacion">
+                    <p>Aprobación tercer etapa de Argentina Programa - IT Master</p>
+                    <img src="./img/certif_3erTramoITMaster.png">
+                    <button onclick="window.open('pdf/5.pdf', '_blank');">
+                        Ver Certificación <i class="fa-solid fa-file-pdf"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <h2>Gonzalo Galarza</h2>
+        <h5>Software Developer</h5>
+        <div class="redes">
+            <a href="https://github.com/Gonzalogalarzaok" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/gonzalogalarza/" target="_blank"><i
+                    class="fa-brands fa-linkedin"></i></a>
+            <a href="mailto:galarzajota71@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+    </footer>
+</body>
+
+</html>

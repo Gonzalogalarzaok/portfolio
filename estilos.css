@@ -1,0 +1,615 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');/* google fonts */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans";
+}
+html{
+    /* me permite deslizarn cuando hago clic en los links del menu */
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenedor-header{
+    background: #1e2326;
+    position: fixed;
+    width: 100%;
+    top: 0;/* top/left: los elementos con una posición absoluta (aquellos que tienen la propiedad position: fixed), determina la distancia entre el borde superior del elemento y el borde superior del bloque que lo contiene. */
+    left: 0;
+    z-index: 99;/* se utiliza para controlar la superposición y el apilamiento de elementos en una página web, permitiendo especificar cuál elemento debe estar en la parte superior y cuál en la parte inferior en el eje z. determina la "profundidad" de un elemento en el eje z (la dirección de adelante hacia atrás) */
+}
+.contenedor-header header{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.contenedor-header header .logo a{
+    font-family: "Righteous";
+    font-size: 36px;
+    color: #1CB698;
+    text-decoration: none;
+}
+.contenedor-header header ul{
+    display: flex;
+    list-style: none;
+}
+.contenedor-header header nav ul li a{
+    text-align: none;
+    font-size: 20px;
+    color: #FFF;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+.contenedor-header header nav ul li a:hover{
+    color: #1CB698;
+}
+.nav-responsive{
+    background-color: #1CB698;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;/* esconde el icono */
+}
+
+/* SECCION INICIO */
+.inicio{
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
+    url(img/fondo.jpg);/* transición suave de color */
+    background-size: cover;
+    height: 105vh;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-attachment: fixed; /* Hace que la imagen se mueva con vos */
+    position: relative;
+}
+.inicio .contenido-banner{/* esto crea el fondo oscuro de la img */
+    padding: 20px;
+    background-color: rgba(30, 35, 38,0.5);
+    max-width: 350px;
+    margin-top: 80px;
+    margin-left: 22px;
+    text-align: center;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;/* Asegura que el contenido-banner esté por encima de la onda */
+}
+.inicio .contenido-banner img{
+    margin-top: 40px;
+    border: 10px solid #1CB698;
+    display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 100%;
+}
+.inicio .texto{
+    padding: 10px;
+    background-color: rgba(30, 35, 38,0.5);
+    margin: 40px 20px;
+    text-align: left;
+    border-radius: 15px;
+    position: relative; /* Añadido */
+    z-index: 1; /* Asegura que el texto esté por encima de la onda */
+}
+.inicio .contenido-banner h1{
+    margin: 10px 10px;
+    font-size: 30px;
+    font-family: 'Righteous';
+ }
+.inicio .contenido-banner h2{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 2px;
+    margin-bottom: 5px;
+}
+.inicio .texto h2{
+    font-size: 30px;
+    margin: 40px;
+}
+
+.inicio .contenido-banner .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 20px 5px;
+    font-size: 20px;
+    transition: .3s;
+}
+.inicio .contenido-banner .redes a:hover{
+    background-color: #1CB698;
+} 
+
+/* SOBRE MI */
+
+.sobremi{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.sobremi .contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.sobremi h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.sobremi .contenido-seccion p{
+    font: 18px;/* fuente de 18px */
+    font-size: 25px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    padding-bottom: 19px;
+}
+.sobremi .contenido-seccion p span{
+    color: #1CB698;
+    font-weight: bold;
+}
+.sobremi .abajo{
+    display: flex;
+    justify-content: space-between;
+}
+.sobremi .fila .col{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+}
+.sobremi .abajo .fila .col h3{
+    font-size: 28px;
+    font-family: 'Righteous';
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+.sobremi .abajo .fila .col ul{
+    list-style: none;
+}
+.sobremi .abajo .fila .col ul li{
+    margin: 12px 70px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    white-space: nowrap; /* Evita saltos de línea */
+}
+.sobremi .abajo .fila .col ul li strong{
+    display: inline-block;
+    color: #1CB698;
+    width: 130px;
+    font-size: 20px; 
+}
+.sobremi button{
+    cursor: pointer;
+    background-color: transparent;/* los bordes no sean visibles */
+    border: 2px solid #fff;
+    width: fit-content;/* ajusta el ancho de un elemento para que se ajuste automáticamente al contenido dentro de él */
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+ .sobremi button .overlay1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.sobremi button:hover .overlay1{
+    width: 100%;
+}
+.sobremi .abajo .img img{
+    height:auto;
+    width: 70%;
+    border-radius: 10%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Skills */
+.skills{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 50px 20px;
+}
+.skills .contenido-skills{
+    max-width: 1100px;
+    margin: auto;
+}
+.skills h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.subtitulos{
+    font-size: 25px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+.lenguajes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+.skill{
+    position: relative;
+    max-width: 340px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+}
+.skill img{
+    width: 90px;
+    display: flex;
+    align-content: center;
+}
+.skill span{
+    font-size: 20px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: #1CB698;
+}
+.skills .contenido-skills .lenguajes .skill:hover {
+    background-color: #1CB698;
+    border-radius: 10px;
+    color: #252A2E;
+    padding: 15px;
+}
+.skills .contenido-skills .lenguajes .skill:hover span{
+    color: #252A2E;
+}
+
+/* aptitudes (skills)*/
+.aptitudes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; padding: 20px 10px;
+}
+.item{
+    position: relative;
+    max-width: 340px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: .4s;
+}
+.item span{
+    font-size: 20px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: #1CB698;
+}
+.item i{
+    padding: 10px;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+}
+ .skills .contenido-skills .aptitudes .item:hover {
+    background-color: #1CB698;
+    border-radius: 10px;
+    color: #252A2E;
+    padding: 15px;
+}
+.skills .contenido-skills .aptitudes .item:hover span{
+    color: #252A2E;
+}
+
+
+
+/* PROYECTOS */
+.proyectos{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 20px;
+}
+.contenido-seccion{
+    max-width: 1100px;
+    margin: auto;
+}
+.proyectos h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contenedor-proyecto{
+    display: block;
+}
+.proyecto{
+    position: relative;
+    max-width: 340px;
+    height: fit-content;/* se utiliza para hacer que la altura de un elemento HTML se ajuste dinámicamente según el tamaño de su contenido, permitiendo que el elemento se expanda automáticamente para adaptarse a su contenido sin necesidad de una altura fija. */
+    margin: 10px;
+    cursor: pointer;
+}
+
+.proyecto img{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+.overlay2{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+    border-radius: 20px;
+}
+.overlay2 h3{
+    margin-bottom: 20px;
+    transition: 1s;
+}
+.overlay2 p{
+    margin-top: 20px;
+    transition: 1s;
+    padding: 0 15px;
+    font-size: 15px;
+}
+.overlay2:hover{
+    opacity: 1;
+}
+.overlay2:hover h3{
+    margin-bottom: 0px;/* le da un efecto raro */
+}
+.proyectos button{
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+}
+.proyectos button .overlay3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+button:hover .overlay3{
+    width: 100%;
+}
+
+
+
+
+/* CERTIFICACIONES */
+.certificaciones{
+    background-color: #252A2E;
+    color: #fff;
+    padding: 30px 15px;
+
+}
+.contenido-seccion{
+    display: block;
+}
+.certificaciones h2{
+    font-size: 48px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+.contenedor-certificaciones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+.certificacion{
+    max-width: 340px;
+    height: fit-content;
+    margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    display: inline-block;
+    background-color: rgba(30, 35, 38,0.5);
+    z-index: 1;
+    border-radius: 10px;
+}
+.certificacion p{
+    font-size: 20px;
+    text-align: center;
+    min-height: 130px;
+    overflow: hidden; /* Ocultar texto que exceda la altura */
+    margin: 15px; /* Espacio interno para el texto */
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.certificacion img{
+    max-width: 100%; /* Ajustar la imagen al ancho del div */
+    max-height: 190px; /* Altura máxima de la imagen */
+    display: block; /* Evitar espacios en blanco debajo de la imagen */
+    margin: 0 auto; /* Centrar la imagen horizontalmente */
+    border-radius: 3%;
+}
+.certificacion button {
+    cursor: pointer;
+    background-color: transparent;/* los bordes no sean visibles */
+    border: 2px solid #fff;
+    width: fit-content;/* ajusta el ancho de un elemento para que se ajuste automáticamente al contenido dentro de él */
+    display: block;
+    margin: 40px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+    border-radius: 7px;
+  }
+  .certificacion button .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #1CB698;
+    z-index: -1;
+    transition: 1s;
+}
+.certificacion button:hover .overlay{
+    width: 100%;
+}
+
+/* FOOTER */
+footer{
+    background-color: #1e2326;
+    color: #fff;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+footer h2{
+    font-size: 35px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+    color: #1CB698;
+}
+footer h5{
+    font-size: 25px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 10px 0;
+}
+footer .redes{
+    margin-bottom: 20px;
+}
+footer .redes a{
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 40px 20px;
+    font-size: 20px;
+    transition: .3s;
+}
+footer .arriba{/* BOTON DE INICIO */
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #1CB698;
+    color: #FFF;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -25px;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 18px;
+}
+footer .redes a:hover{
+    background-color: #1CB698;
+} 
+
+
+
+
+/* SECCION RESPONSIVE */
+
+@media screen and (max-width:980px) {
+    nav{
+        display: none;
+    }
+    .nav-responsive{
+        display: block;
+    }
+    nav.responsive{
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+    nav.responsive ul{
+        display: block !important;
+    }
+    nav.responsive ul li{
+        border-bottom: 1px solid #FFF;
+        padding: 10px 0;
+    }
+}
+@media screen and (max-width:700px){
+    .sobremi .abajo .fila{
+        display: block;
+    }
+    .sobremi .abajo .fila .col{
+        width: fit-content;
+    }
+    .skills .lenguajes{
+        display: block;
+    }
+    .skills .aptitudes{
+        display: block;
+    }
+    .portfolio .galeria .proyecto img{
+        width: 100%;
+    }
+}
