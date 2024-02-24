@@ -568,11 +568,7 @@ footer .redes a:hover{
     background-color: #1CB698;
 } 
 
-
-
-
 /* SECCION RESPONSIVE */
-
 @media screen and (max-width:980px) {
     nav{
         display: none;
@@ -597,6 +593,16 @@ footer .redes a:hover{
     }
 }
 @media screen and (max-width:700px){
+    .inicio{
+        display: block;
+    }
+    .inicio .texto{
+        margin-bottom: 30vh;
+    }
+    .inicio .texto h2{
+        font-size: 2vh;
+        text-align: center;
+    }
     .sobremi .abajo .fila{
         display: block;
     }
@@ -605,6 +611,9 @@ footer .redes a:hover{
     }
     .skills .lenguajes{
         display: block;
+    }
+    .skills .lenguajes .skill{
+        align-items: center;
     }
     .skills .aptitudes{
         display: block;
